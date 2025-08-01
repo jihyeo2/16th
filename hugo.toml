@@ -1,0 +1,137 @@
+# If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
+# contain http (as opposed to https) URLs. This would affect Google indexing of your URLs.
+baseURL = "https://jihyeo2.github.io/16th/"
+title = "My 16th Portfolio"
+theme = "PaperMod"
+languageCode = "en-us"
+
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+pygmentsUseClasses = true
+mainsections = ["posts", "papermod"]
+
+[minify]
+disableXML = true
+
+[pagination]
+disableAliases = false
+pagerSize = 5
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+
+# Language-specific settings
+[languages]
+
+  [languages.en]
+  languageName = "English"
+  weight = 1
+
+    [languages.en.taxonomies]
+    category = "categories"
+    tag = "tags"
+    series = "series"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+      name = "Archive"
+      url = "archives"
+      weight = 5
+
+      [[languages.en.menu.main]]
+      name = "Search"
+      url = "search/"
+      weight = 10
+
+      [[languages.en.menu.main]]
+      name = "Tags"
+      url = "tags/"
+      weight = 10
+
+[params]
+env = "production"
+description = "nth - i actually don't remember how many attempts were there before this"
+author = "Julie Oh"
+defaultTheme = "auto"
+ShowShareButtons = true
+ShowReadingTime = true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = true
+ShowAllPagesInArchive = true
+ShowPageNums = true
+ShowToc = true
+images = ["images/blob.png"]
+
+  [params.profileMode]
+  enabled = false
+  title = "PaperMod"
+  imageUrl = "#"
+  imageTitle = "my image"
+
+    [[params.profileMode.buttons]]
+    name = "Archives"
+    url = "archives"
+
+    [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
+
+  [params.homeInfoParams]
+  Title = "Anyeong nugu say yo"
+  Content = """
+- I'm Julie Oh, nice to meet you!
+- I'll be writing posts here about my random thoughts, projects, etc.
+- My posts could be very mumbo-jumboed, technical, or cringey. I wonder how I'd feel about them in a couple of years.
+- So buckle up! Oh just a heads up, you might want some sort of bag with you. You could feel unwell while reading at any time, at least I did.
+"""
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/joh345/"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/jihyeo2"
+
+  [[params.socialIcons]]
+    name = "discord"
+    url = "https://discord.com/users/yuiop5781"
+
+  [[params.socialIcons]]
+    name = "x"
+    url = "https://x.com/yuiop5781"
+
+  [params.assets]
+  disableHLJS = true
+
+[markup]
+
+  [markup.goldmark.renderer]
+  unsafe = true
+
+  [markup.highlight]
+  noClasses = false
+
+[services]
+
+  [services.instagram]
+  disableInlineCSS = true
+
+  [services.x]
+  disableInlineCSS = true
