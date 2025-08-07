@@ -46,6 +46,12 @@ keys = ["title", "permalink", "summary", "content"]
     series = "series"
 
     [languages.en.menu]
+
+      [[languages.en.menu.main]]
+      name = "About"
+      url = "/about/"
+      weight = 1
+      
       [[languages.en.menu.main]]
       name = "Archive"
       url = "archives"
@@ -97,7 +103,7 @@ images = ["images/blob.png"]
   Content = """
 - I'm Julie Oh, nice to meet you!
 - I'll be writing posts here about my random thoughts, projects, etc.
-- My posts could be very mumbo-jumboed, technical, or cringey. I wonder how I'd feel about them in a couple of years.
+- My posts could be very mumbo-jumboed, technical (to the best of my ability), or cringey. I wonder how I'd feel about them in a couple of years.
 - So buckle up! Oh just a heads up, you might want some sort of bag with you. You could feel unwell while reading at any time, at least I did.
 """
 

@@ -31,7 +31,7 @@ Umm..just a quick note. It is top secret who Jerry is (I signed the NDA) or whet
 a
 ### Important Notice
 
-I didn't do any work around bypassing anticheat, so this only works on private servers. But really, all cheats *should* be used on private servers to respect other players and prevent yourself from getting banned. Remember, there are always this one group of people you can troll--your friends. Just ~~kidnap~~convince them to join your private server. That's basically how I got my cheat playtested.
+I didn't do any work around bypassing anticheat, so this only works on private servers for CSGO legacy version. But really, all cheats *should* be used on private servers to respect other players and prevent yourself from getting banned. Remember, there are always this one group of people you can troll--your friends. Just ~~kidnap~~convince them to join your private server. That's basically how I got my cheat playtested.
 
 <!-- ### Preview
 So, what's in this gloriously named package? No need to explain, let's just roll the clip.

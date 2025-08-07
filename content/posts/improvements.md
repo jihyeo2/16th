@@ -47,3 +47,6 @@ I poked around the source code (static analysis) and set some breakpoints (dynam
 As you can see, after several checks in `CBasePlayer::OnTakeDamage` such as flags for God mode, armor, etc, the actual health reduction happens in `CBaseEntity::OnTakeDamage`. I thought hooking that function after figuring out its address through pattern scanning would work, but turns out it's never called when anyone takes damage--not me, not other players. So I still need to find the *real* function that's triggered on damage. Too bad this wasn't the one.
 
 Then I looked at the clock and thought, well, I’ll get back to this later.
+
+## (Added) Skin Changer
+Found it from [another csgo internal hack](https://github.com/CelestialPaler/CSGO-Internal-Hack) and thought it sounds interesting...(TMI: Mannnn they have such a better looking UI than mine lol and so much more toggles/options you can modify.)
