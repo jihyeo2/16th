@@ -49,7 +49,7 @@ keys = ["title", "permalink", "summary", "content"]
 
       [[languages.en.menu.main]]
       name = "About"
-      url = "/about/"
+      url = "about/"
       weight = 1
       
       [[languages.en.menu.main]]
