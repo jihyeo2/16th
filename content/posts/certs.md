@@ -1,5 +1,5 @@
 +++
-date = '2025-09-29T23:12:18-04:00'
+date = '2025-09-29T12:18:00-04:00'
 draft = false
 title = "AWS CCP & Security+"
 description = 'study study study'
