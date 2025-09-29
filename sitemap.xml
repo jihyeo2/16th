@@ -2,16 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jihyeo2.github.io/16th/posts/</loc>
-    <lastmod>2025-09-29T23:12:18-04:00</lastmod>
+    <loc>https://jihyeo2.github.io/16th/posts/certs/</loc>
+    <lastmod>2025-09-29T12:18:00-04:00</lastmod>
   </url><url>
     <loc>https://jihyeo2.github.io/16th/categories/</loc>
-    <lastmod>2025-07-29T21:13:00-04:00</lastmod>
+    <lastmod>2025-09-29T12:18:00-04:00</lastmod>
   </url><url>
-    <loc>https://jihyeo2.github.io/16th/tags/re_csgo/</loc>
-    <lastmod>2025-07-29T21:13:00-04:00</lastmod>
+    <loc>https://jihyeo2.github.io/16th/categories/general/</loc>
+    <lastmod>2025-09-29T12:18:00-04:00</lastmod>
+  </url><url>
+    <loc>https://jihyeo2.github.io/16th/tags/life/</loc>
+    <lastmod>2025-09-29T12:18:00-04:00</lastmod>
+  </url><url>
+    <loc>https://jihyeo2.github.io/16th/posts/</loc>
+    <lastmod>2025-09-29T12:18:00-04:00</lastmod>
   </url><url>
     <loc>https://jihyeo2.github.io/16th/tags/</loc>
+    <lastmod>2025-09-29T12:18:00-04:00</lastmod>
+  </url><url>
+    <loc>https://jihyeo2.github.io/16th/posts/employed/</loc>
+    <lastmod>2025-09-29T10:29:00-04:00</lastmod>
+  </url><url>
+    <loc>https://jihyeo2.github.io/16th/tags/re_csgo/</loc>
     <lastmod>2025-07-29T21:13:00-04:00</lastmod>
   </url><url>
     <loc>https://jihyeo2.github.io/16th/categories/technical/</loc>
@@ -19,9 +31,6 @@
   </url><url>
     <loc>https://jihyeo2.github.io/16th/posts/improvements/</loc>
     <lastmod>2025-07-29T21:13:00-04:00</lastmod>
-  </url><url>
-    <loc>https://jihyeo2.github.io/16th/categories/general/</loc>
-    <lastmod>2025-07-28T17:05:00-04:00</lastmod>
   </url><url>
     <loc>https://jihyeo2.github.io/16th/tags/misc/</loc>
     <lastmod>2025-07-28T17:05:00-04:00</lastmod>
@@ -33,9 +42,6 @@
     <lastmod>2025-07-25T19:47:00-04:00</lastmod>
   </url><url>
     <loc>https://jihyeo2.github.io/16th/posts/rubicon/</loc>
-    <lastmod>2025-07-06T23:11:00-04:00</lastmod>
-  </url><url>
-    <loc>https://jihyeo2.github.io/16th/tags/life/</loc>
     <lastmod>2025-07-06T23:11:00-04:00</lastmod>
   </url><url>
     <loc>https://jihyeo2.github.io/16th/posts/esp/</loc>
