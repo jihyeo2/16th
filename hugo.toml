@@ -67,6 +67,11 @@ keys = ["title", "permalink", "summary", "content"]
       url = "tags/"
       weight = 10
 
+      [[languages.en.menu.main]]
+      name = "Technical"
+      url = "categories/technical/"
+      weight = 15
+
 [params]
 env = "production"
 description = "nth - i actually don't remember how many attempts were there before this"

@@ -4,6 +4,7 @@ draft = false
 title = "Aimbot was so easy to make guys"
 description = "I was truly worried if I'd still lose to my friend even with an aimbot."
 tags = ["re_csgo"]
+categories = ["technical"]
 [cover]
 image = "https://dl.dropboxusercontent.com/scl/fi/pnbaw3or25g05gbxmo7k2/aimbot_demo3_compressed.gif?rlkey=bipkmzt7dl2mmq4ijlbuhmm0x&e=1&st=3e6l9mf8&dl=0"
 hiddenInList = true

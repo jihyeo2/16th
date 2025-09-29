@@ -4,6 +4,7 @@ draft = false
 title = "xXESPXx"
 description = "Spinning 3d box is kinda cool, now that I see it."
 tags = ["re_csgo"]
+categories = ["technical"]
 [cover]
 image = "images/esp.png"
 hiddenInList = true

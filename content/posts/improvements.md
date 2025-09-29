@@ -4,6 +4,7 @@ draft = false
 title = "Upcoming (someday:D) Multicheat Features List"
 description = 'TRUST'
 tags = ["re_csgo"]
+categories = ["technical"]
 +++
 
 ## Teleport to Enemy & God Mode

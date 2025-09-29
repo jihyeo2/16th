@@ -4,6 +4,7 @@ draft = false
 title = "Jerry's fart stinks"
 description = "What a name for my very first CSGO multicheat. Yep, that's all me at 3am."
 tags = ["re_csgo"]
+categories = ["technical"]
 +++
 
 > - **I'll be going over my first CSGO multicheat. At the time of writing, I'm not even sure what I'll end up talking about here, oops.**

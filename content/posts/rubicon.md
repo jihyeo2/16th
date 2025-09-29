@@ -4,6 +4,7 @@ draft = false
 title = "I've Crossed the Rubicon"
 description = '배수진을 치다'
 tags = ["life"]
+categories = ["general"]
 +++
 
 Today, I watched a movie called *No Reservations*. It is a film I first saw back in middle school with my dad in Korea. Back then, movies were one of the few ways I could catch a glimpse of what life looked like on the other side of the world--especially in America. Little by little, watching those stories unfold on screen, I began to dream about studying and living in the U.S. And by God's grace, and with the unwavering support of my devoted parents, that dream became my reality.

@@ -50,6 +50,144 @@
 {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
 {{- partial "home_info.html" . }}
 {{- end }}
+{{- if .IsHome }}
+<div class="category-toggle" style="text-align: center; margin: -15px 0 20px 0;">
+  <label class="toggle-switch">
+    <span class="toggle-label">Technical-only</span>
+    <input type="checkbox" id="categoryToggle">
+    <span class="slider"></span>
+  </label>
+</div>
+
+<style>
+.category-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.toggle-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle-label {
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.toggle-label.active {
+  background-color: var(--theme);
+  color: var(--entry);
+}
+
+.toggle-label:not(.active) {
+  color: var(--secondary);
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  background-color: var(--secondary);
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--content);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  transform: translateX(0px);
+}
+
+.toggle-switch input:checked + .slider {
+  background-color: var(--primary);
+}
+
+.toggle-switch input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: var(--entry);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('categoryToggle');
+  const labels = document.querySelectorAll('.toggle-label');
+  const posts = document.querySelectorAll('.post-entry, .first-entry');
+
+  // Check URL parameters first
+  const urlParams = new URLSearchParams(window.location.search);
+  const technicalParam = urlParams.get('technical');
+
+  if (technicalParam === 'true') {
+    toggle.checked = true;
+    // Save this state to localStorage so it persists
+    localStorage.setItem('technicalToggle', 'true');
+  } else {
+    // Load saved toggle state from localStorage
+    const savedState = localStorage.getItem('technicalToggle');
+    if (savedState === 'true') {
+      toggle.checked = true;
+    }
+  }
+
+  function filterPosts() {
+    posts.forEach(post => {
+      const categories = post.getAttribute('data-categories');
+
+      // Skip filtering if this is not a post article (no categories)
+      if (!categories || categories === '') {
+        post.style.display = '';
+        return;
+      }
+
+      if (toggle.checked) {
+        // Show only technical posts when toggle is ON
+        if (categories.includes('technical')) {
+          post.style.display = '';
+        } else {
+          post.style.display = 'none';
+        }
+      } else {
+        // Show all posts when toggle is OFF
+        post.style.display = '';
+      }
+    });
+  }
+
+  toggle.addEventListener('change', function() {
+    // Save toggle state to localStorage
+    localStorage.setItem('technicalToggle', toggle.checked.toString());
+    filterPosts();
+  });
+
+  // Initial state - apply saved filter
+  filterPosts();
+});
+</script>
+{{- end }}
 
 {{- $term := .Data.Term }}
 {{- range $index, $page := $paginator.Pages }}
@@ -63,7 +201,7 @@
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
 
-<article class="{{ $class }}">
+<article class="{{ $class }}" data-categories="{{ delimit .Params.categories "," }}">
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">

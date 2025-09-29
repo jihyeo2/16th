@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Misc on My 16th Portfolio</title>
-    <link>http://localhost:1313/16th/tags/misc/</link>
-    <description>Recent content in Misc on My 16th Portfolio</description>
+    <title>General on My 16th Portfolio</title>
+    <link>http://localhost:1313/16th/categories/general/</link>
+    <description>Recent content in General on My 16th Portfolio</description>
     <image>
       <title>My 16th Portfolio</title>
       <url>http://localhost:1313/16th/images/blob.png</url>
@@ -12,13 +12,20 @@
     <generator>Hugo -- 0.146.6</generator>
     <language>en</language>
     <lastBuildDate>Mon, 28 Jul 2025 17:05:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/16th/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/16th/categories/general/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The first blogger that made me want to blog</title>
       <link>http://localhost:1313/16th/posts/favblogger/</link>
       <pubDate>Mon, 28 Jul 2025 17:05:00 -0400</pubDate>
       <guid>http://localhost:1313/16th/posts/favblogger/</guid>
       <description>Cannot believe it&amp;#39;s been 7 years since I read his blogs</description>
+    </item>
+    <item>
+      <title>I&#39;ve Crossed the Rubicon</title>
+      <link>http://localhost:1313/16th/posts/rubicon/</link>
+      <pubDate>Sun, 06 Jul 2025 23:11:00 -0400</pubDate>
+      <guid>http://localhost:1313/16th/posts/rubicon/</guid>
+      <description>배수진을 치다</description>
     </item>
     <item>
       <title>You there?</title>
