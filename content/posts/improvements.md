@@ -1,7 +1,7 @@
 +++
 date = '2025-07-29T21:13:00-04:00'
 draft = false
-title = "Upcoming (no guarantee:D) Multicheat Features List"
+title = "Upcoming (someday:D) Multicheat Features List"
 description = 'TRUST'
 tags = ["re_csgo"]
 +++

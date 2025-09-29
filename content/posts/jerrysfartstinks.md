@@ -118,9 +118,3 @@ Oh, and I want to learn more about manual mapping so that I don't have to use th
 Writing this cheat and this post took forever. It was a long grind, but totally worth it. It feels great putting everything down into a human-readable form, and even better knowing it might help someone else who's into reverse engineering or game hacking. 
 
 ---
-
-P.S. Shoutout to my cute friend *potato* for being there through all of this, and of course to Jerry--for inspiring the name.
-
-![potato](/16th/images/potato.jpg)
-
----

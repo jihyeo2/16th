@@ -1,6 +1,6 @@
 +++
 date = '2025-07-06T23:11:00-04:00'
-draft = true
+draft = false
 title = "I've Crossed the Rubicon"
 description = '배수진을 치다'
 tags = ["life"]

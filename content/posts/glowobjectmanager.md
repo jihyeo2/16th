@@ -142,9 +142,9 @@ I added the glowObject layout on ReClass.NET for readibility.
 
 ## Finishing up
 
-- At a glance, it might seem like I found the `GlowObjectmanger` in just a couple of hours--but in reality, it took around five days. Not five full 24-hour days, of course, but still a good chunk of time. And when I finally tracked it down, it just felt gooooood, so good. What made it more meaning I think was that I was able to learn how to manually identify the object, approaching it at different angles and methods, instead of relyin on offset dumpers. 
+- At a glance, it might seem like I found the `GlowObjectmanger` in just a couple of hours--but in reality, it took around five days. Not five full 24-hour days, of course, but still a good chunk of time. And when I finally tracked it down, it just felt gooooood, so good. What made it more meaningful I think was that I was able to learn how to manually identify the object, approaching it at different angles and methods, instead of relying on offset dumpers. 
 
-- While GuidedHacking's glowhack guide and aixxe's post are likely enough for anyone with some reverse engineering experience (I learned a term, spoonfeed!), I wanted to document my own step-by-step process in more detail--mainly because there were a few extra obstacles I ran into that I thought might be helpful to share. Hopefully, it’ll help other beginners like me who are learning along the way. (Who cares if I'm spoonfeeding! For babies, you have to chew the food for them sometimes.)
+- While GuidedHacking's glowhack guide and aixxe's post are likely enough for anyone with some reverse engineering experience, I wanted to document my own step-by-step process in more detail--mainly because there were a few extra obstacles I ran into that I thought might be helpful to share. Hopefully, it’ll help other beginners like me who are learning along the way. (Who cares if I'm spoonfeeding! For babies, you have to chew the food for them sometimes.)
 
 ---
 
