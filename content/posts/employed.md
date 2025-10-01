@@ -1,6 +1,6 @@
 +++
 date = '2025-09-29T10:29:00-04:00'
-draft = false
+draft = true
 title = "Employed"
 description = '배수진 worked'
 tags = ["life"]
