@@ -114,7 +114,7 @@ Loooots to improve like:
 - Add per-weapon customization for recoil control
 - Allow users to configure keybinds
 
-Also, I've still got a few ideas like Teleport, Godmode, and Speed Hack. I talked a bit about them in [Upcoming (no guarantee:D) Multicheat Features List](/16th/posts/improvements) post. 
+Also, I've still got a few ideas like Teleport, Godmode, and Speed Hack. I talked a bit about them in [Upcoming (someday:D) Multicheat Features List](/16th/posts/improvements) post. 
 
 Oh, and I want to learn more about manual mapping so that I don't have to use the LoadLibrary function for better stealth.
 
