@@ -2,85 +2,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on My 16th Portfolio</title>
-    <link>https://jihyeo2.github.io/16th/posts/</link>
+    <link>http://localhost:1313/16th/posts/</link>
     <description>Recent content in Posts on My 16th Portfolio</description>
     <image>
       <title>My 16th Portfolio</title>
-      <url>https://jihyeo2.github.io/16th/images/blob.png</url>
-      <link>https://jihyeo2.github.io/16th/images/blob.png</link>
+      <url>http://localhost:1313/16th/images/blob.png</url>
+      <link>http://localhost:1313/16th/images/blob.png</link>
     </image>
     <generator>Hugo -- 0.146.6</generator>
     <language>en</language>
     <lastBuildDate>Mon, 29 Sep 2025 12:18:00 -0400</lastBuildDate>
-    <atom:link href="https://jihyeo2.github.io/16th/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/16th/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS CCP &amp; Security&#43;</title>
-      <link>https://jihyeo2.github.io/16th/posts/certs/</link>
+      <link>http://localhost:1313/16th/posts/certs/</link>
       <pubDate>Mon, 29 Sep 2025 12:18:00 -0400</pubDate>
-      <guid>https://jihyeo2.github.io/16th/posts/certs/</guid>
+      <guid>http://localhost:1313/16th/posts/certs/</guid>
       <description>study study study</description>
     </item>
     <item>
       <title>Upcoming (someday:D) Multicheat Features List</title>
-      <link>https://jihyeo2.github.io/16th/posts/improvements/</link>
+      <link>http://localhost:1313/16th/posts/improvements/</link>
       <pubDate>Tue, 29 Jul 2025 21:13:00 -0400</pubDate>
-      <guid>https://jihyeo2.github.io/16th/posts/improvements/</guid>
+      <guid>http://localhost:1313/16th/posts/improvements/</guid>
       <description>TRUST</description>
     </item>
     <item>
       <title>The first blogger that made me want to blog</title>
-      <link>https://jihyeo2.github.io/16th/posts/favblogger/</link>
+      <link>http://localhost:1313/16th/posts/favblogger/</link>
       <pubDate>Mon, 28 Jul 2025 17:05:00 -0400</pubDate>
-      <guid>https://jihyeo2.github.io/16th/posts/favblogger/</guid>
+      <guid>http://localhost:1313/16th/posts/favblogger/</guid>
       <description>Cannot believe it&amp;#39;s been 7 years since I read his blogs</description>
     </item>
     <item>
       <title>Jerry&#39;s fart stinks</title>
-      <link>https://jihyeo2.github.io/16th/posts/jerrysfartstinks/</link>
+      <link>http://localhost:1313/16th/posts/jerrysfartstinks/</link>
       <pubDate>Fri, 25 Jul 2025 19:47:00 -0400</pubDate>
-      <guid>https://jihyeo2.github.io/16th/posts/jerrysfartstinks/</guid>
+      <guid>http://localhost:1313/16th/posts/jerrysfartstinks/</guid>
       <description>What a name for my very first CSGO multicheat. Yep, that&amp;#39;s all me at 3am.</description>
     </item>
     <item>
       <title>I&#39;ve Crossed the Rubicon</title>
-      <link>https://jihyeo2.github.io/16th/posts/rubicon/</link>
+      <link>http://localhost:1313/16th/posts/rubicon/</link>
       <pubDate>Sun, 06 Jul 2025 23:11:00 -0400</pubDate>
-      <guid>https://jihyeo2.github.io/16th/posts/rubicon/</guid>
+      <guid>http://localhost:1313/16th/posts/rubicon/</guid>
       <description>배수진을 치다</description>
     </item>
     <item>
       <title>xXESPXx</title>
-      <link>https://jihyeo2.github.io/16th/posts/esp/</link>
+      <link>http://localhost:1313/16th/posts/esp/</link>
       <pubDate>Fri, 13 Jun 2025 16:33:00 -0400</pubDate>
-      <guid>https://jihyeo2.github.io/16th/posts/esp/</guid>
+      <guid>http://localhost:1313/16th/posts/esp/</guid>
       <description>Spinning 3d box is kinda cool, now that I see it.</description>
     </item>
     <item>
       <title>Aimbot was so easy to make guys</title>
-      <link>https://jihyeo2.github.io/16th/posts/aimbot/</link>
+      <link>http://localhost:1313/16th/posts/aimbot/</link>
       <pubDate>Fri, 30 May 2025 12:07:00 -0400</pubDate>
-      <guid>https://jihyeo2.github.io/16th/posts/aimbot/</guid>
+      <guid>http://localhost:1313/16th/posts/aimbot/</guid>
       <description>I was truly worried if I&amp;#39;d still lose to my friend even with an aimbot.</description>
     </item>
     <item>
       <title>Finding the missing manager</title>
-      <link>https://jihyeo2.github.io/16th/posts/glowobjectmanager/</link>
+      <link>http://localhost:1313/16th/posts/glowobjectmanager/</link>
       <pubDate>Mon, 26 May 2025 23:11:00 -0400</pubDate>
-      <guid>https://jihyeo2.github.io/16th/posts/glowobjectmanager/</guid>
+      <guid>http://localhost:1313/16th/posts/glowobjectmanager/</guid>
       <description>Mhm my new manager at GlowObject Inc.</description>
     </item>
     <item>
       <title>You there?</title>
-      <link>https://jihyeo2.github.io/16th/posts/mole/</link>
+      <link>http://localhost:1313/16th/posts/mole/</link>
       <pubDate>Mon, 26 May 2025 22:17:00 -0400</pubDate>
-      <guid>https://jihyeo2.github.io/16th/posts/mole/</guid>
+      <guid>http://localhost:1313/16th/posts/mole/</guid>
       <description>Digging up what I had before</description>
     </item>
     <item>
       <title>umm hello</title>
-      <link>https://jihyeo2.github.io/16th/posts/test/</link>
+      <link>http://localhost:1313/16th/posts/test/</link>
       <pubDate>Sun, 20 Apr 2025 18:39:08 -0500</pubDate>
-      <guid>https://jihyeo2.github.io/16th/posts/test/</guid>
+      <guid>http://localhost:1313/16th/posts/test/</guid>
       <description>Testing if I can stick with Hugo</description>
     </item>
   </channel>

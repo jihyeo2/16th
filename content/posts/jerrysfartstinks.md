@@ -20,6 +20,12 @@ This probably reads more like a product label than a TLDR. Eh whatever, my super
 
 ---
 
+## Github Repo
+
+[CSGO-multihack](https://github.com/jihyeo2/CSGO-multihack)
+
+---
+
 ## A bit of background
 
 I've always enjoyed messing around CSGO and other FPS games, writing mini cheats like flyhack, godmode, aimbot--you name it. One day, I figured it was time to lock in and build a full-on multicheat. (If you are wondering what made me, feel free to DM me--especially dear recruiters:D) Anyways, this is the final product. Not "final" as in the last cheat I'll ever write, but the polished version of my first full CSGO multicheat release.
@@ -28,7 +34,7 @@ I've always enjoyed messing around CSGO and other FPS games, writing mini cheats
 
 ## Jerry's fart stinks
 
-Umm..just a quick note. It is top secret who Jerry is (I signed the NDA) or whether his fart actually stinks--but you know, it's the content that matters, right? (wink wink) Pretty sure it was around 3am when I came up with the name.
+Umm..just a quick note. It is a top secret who Jerry is (I signed the NDA) or whether his fart actually stinks--but you know, it's the content that matters, right? (wink wink) Pretty sure it was around 3am when I came up with the name.
 a
 ### Important Notice
 
