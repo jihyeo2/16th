@@ -35,7 +35,7 @@ I've always enjoyed messing around CSGO and other FPS games, writing mini cheats
 ## Jerry's fart stinks
 
 Umm..just a quick note. It is a top secret who Jerry is (I signed the NDA) or whether his fart actually stinks--but you know, it's the content that matters, right? (wink wink) Pretty sure it was around 3am when I came up with the name.
-a
+
 ### Important Notice
 
 I didn't do any work around bypassing anticheat, so this only works on private servers for CSGO legacy version. But really, all cheats *should* be used on private servers to respect other players and prevent yourself from getting banned. Remember, there are always this one group of people you can troll--your friends. Just ~~kidnap~~convince them to join your private server. That's basically how I got my cheat playtested.
