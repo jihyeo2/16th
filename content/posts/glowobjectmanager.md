@@ -13,7 +13,7 @@ hiddenInList = true
 > - **I'll be talking about a part I was stuck at when I was writing a CS:GO glowhack.**
 > - {{< collapse summary="**TLDR**" >}}
 
-For a glowhack, you'll need access to the `GlowObjectManager`. If you cannot find it with an offset dumper and need to locate it manually like I did, you should start by looking at functions like **RenderGlowEffects** or **DoPostScreenSpaceEffects** using the keyword **"EntityGlowEffects"**. By analyzing the assemly and setting breakpoints at either function, you can trace and find the address of `GlowObjectManager` (in my case, it was at `client.dll + 0x535fcb8`).
+For a glowhack, you'll need access to the `GlowObjectManager`. If you cannot find it with an offset dumper and need to locate it manually like I did, you should start by looking at functions like **RenderGlowEffects** or **DoPostScreenSpaceEffects** using the keyword **"EntityGlowEffects"**. By analyzing the assembly and setting breakpoints at either function, you can trace and find the address of `GlowObjectManager` (in my case, it was at `client.dll + 0x535fcb8`).
 
 {{</ collapse >}}
 
@@ -57,7 +57,7 @@ struct GlowObjectDefinition_t {
 Additionally, while reading [GuidedHacking's glowhack guide](https://guidedhacking.com/threads/external-c-csgo-glowhack-tutorial.11822/), I learned more about the `GlowObjectDefinition_t` structure and was able to piece together the following.
 
 ```cpp
-struct GllowObjectDefinition_t {
+struct GlowObjectDefinition_t {
     BYTE buffer0[4]; // padding
     EHANDLE m_hEntity;
 	Vector m_vGlowColor;
@@ -78,7 +78,7 @@ struct GllowObjectDefinition_t {
 
 ## Why do I need the GlowObjectManager?
 
-To write a glowhack, I needed two key pieces of information: the addresses of the `GlowObjectManager` and the `GlowIndex` for each entity. Finding the offset of `GlowIndex` was very easy as the [hazedumper](https://github.com/frk1/hazedumper) (it's an offset dumper I use for CS:GO) just dumped the right offset. However, it didn't return a valid adddress for `GlowObjectManager`. 
+To write a glowhack, I needed two key pieces of information: the addresses of the `GlowObjectManager` and the `GlowIndex` for each entity. Finding the offset of `GlowIndex` was very easy as the [hazedumper](https://github.com/frk1/hazedumper) (it's an offset dumper I use for CS:GO) just dumped the right offset. However, it didn't return a valid address for `GlowObjectManager`. 
 
 So began the hunt.
 
@@ -110,7 +110,7 @@ Following aixxe's steps, I searched "EntityGlowEffects" in IDA Pro and found the
 
 ![doposteffects](/16th/images/doposteffects.png)
 
-As mentioned in the post by aixxe, the first argument passed to `RenderGlowEffects` should be the `glowObjectManager`. But the address show in IDA (`client.dll+ 0x46246f8`) was not pointing to glowObjectManager. 
+As mentioned in the post by aixxe, the first argument passed to `RenderGlowEffects` should be the `glowObjectManager`. But the address shown in IDA (`client.dll+ 0x46246f8`) was not pointing to glowObjectManager. 
 
 ![gom_ida](/16th/images/gom_ida.png)
 
@@ -123,7 +123,7 @@ Not a problem, I can just set breakpoints and inspect the registers on cheat eng
 
 ![doposteffects_ce](/16th/images/doposteffects_ce.png)
 
-From the `esi` register, I found [client.dll + 0x534D6E8] or 0x5D6908C4, but it turned out not to be the glowObjectManager. I was quite puzzled here. I took a moment to sccan nearby memory regions for anything that looked like glowObjectManager to no avail.
+From the `esi` register, I found [client.dll + 0x534D6E8] or 0x5D6908C4, but it turned out not to be the glowObjectManager. I was quite puzzled here. I took a moment to scan nearby memory regions for anything that looked like glowObjectManager to no avail.
 
 ![wrongoffset](/16th/images/wrongoffset.png)
 
@@ -133,7 +133,7 @@ And there it was--in the `eax` register for some reason: `client.dll + 0x535fcb8
 
 ![correctoffset](/16th/images/correctoffset.png)
 
-I added the glowObject layout on ReClass.NET for readibility.
+I added the glowObject layout on ReClass.NET for readability.
 
 ![correctoffsetws](/16th/images/correctoffsetws.png)
 
@@ -143,7 +143,7 @@ I added the glowObject layout on ReClass.NET for readibility.
 
 ## Finishing up
 
-- At a glance, it might seem like I found the `GlowObjectmanger` in just a couple of hours--but in reality, it took around five days. Not five full 24-hour days, of course, but still a good chunk of time. And when I finally tracked it down, it just felt gooooood, so good. What made it more meaningful I think was that I was able to learn how to manually identify the object, approaching it at different angles and methods, instead of relying on offset dumpers. 
+- At a glance, it might seem like I found the `GlowObjectManager` in just a couple of hours--but in reality, it took around five days. Not five full 24-hour days, of course, but still a good chunk of time. And when I finally tracked it down, it just felt gooooood, so good. What made it more meaningful I think was that I was able to learn how to manually identify the object, approaching it at different angles and methods, instead of relying on offset dumpers. 
 
 - While GuidedHacking's glowhack guide and aixxe's post are likely enough for anyone with some reverse engineering experience, I wanted to document my own step-by-step process in more detail--mainly because there were a few extra obstacles I ran into that I thought might be helpful to share. Hopefully, it’ll help other beginners like me who are learning along the way. (Who cares if I'm spoonfeeding! For babies, you have to chew the food for them sometimes.)
 

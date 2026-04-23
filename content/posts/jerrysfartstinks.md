@@ -86,7 +86,7 @@ So, what's in this gloriously named package? No need to explain, let's just roll
 
 **⚠️ Just a heads-up: I just realized most browsers will flag the executable as a virus when you try to download it. So you’ll probably need to disable your browser’s antivirus as well temporarily—at least until Julie Oh (hope it's not me) figures out a clever workaround. haha...haha...ha...tears**  
 
-Double-check you see `csgo_multihack_01.dll` in the same folder the executable `DLLInjector_csgo.multihack.exe` is saved. Also, make sure CSGO is already running before you launch the cheat. It's an internal cheat, so it runs via DLL injection. Hit run, and bam--you are invincible. Almost...if you end up still losing to your friends, you can be my buddy. It's hard to suck controls that much, but some people just do. Like me:D 
+Double-check you see `csgo_multihack_01.dll` in the same folder the executable `DLLInjector_csgo.multihack.exe` is saved. Also, make sure CSGO is already running before you launch the cheat. It's an internal cheat, so it runs via DLL injection. Hit run, and bam--you are invincible. Almost...if you end up still losing to your friends, you can be my buddy. It's hard to suck at controls that much, but some people just do. Like me:D 
 
 ---
 

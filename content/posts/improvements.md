@@ -21,7 +21,7 @@ I just tried overwriting the values directly at the memory addresses. Unsurprisi
 
 ## Second approach
 
-I figured, since functions like EndScene() tun every frame and keep things synced, maybe I could call a similar function every cycle after tweaking it with a trampoline hook.
+I figured, since functions like EndScene() run every frame and keep things synced, maybe I could call a similar function every cycle after tweaking it with a trampoline hook.
 
 After some digging, I found `CL_Move` for teleporting (ty chatgpt) and `onTakeDamage` for God Mode (ty myself).
 
@@ -34,7 +34,7 @@ After some digging, I found `CL_Move` for teleporting (ty chatgpt) and `onTakeDa
 4. call `CL_Move` (found by pattern scanning)
 to sync my new location with the server.
 
-Short story short, it didn't work. I thought maybe the update speed or frequency was off, so I tried tying it to EndScene() to send updates every frame, but that didn't help much either. Looks like I need to spend more time undrestanding `CL_Move` and the rendering pipeline, especially tickshifting and whatnot. Or maybe I'll just look for a better function if this one doesn't pan out.
+Long story short, it didn't work. I thought maybe the update speed or frequency was off, so I tried tying it to EndScene() to send updates every frame, but that didn't help much either. Looks like I need to spend more time understanding `CL_Move` and the rendering pipeline, especially tickshifting and whatnot. Or maybe I'll just look for a better function if this one doesn't pan out.
 
 ### OnTakeDamage
 

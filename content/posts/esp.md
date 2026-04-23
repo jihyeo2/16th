@@ -15,7 +15,7 @@ hiddenInList = true
 
 E. nemies glowing like neon signs, can’t miss 'em now  
 S. eeing them through walls feels almost unfair  
-P. erfect Visibility, whether they like it or not  
+P. erfect visibility, whether they like it or not  
 
 Ahahaha, how was it? Pretty solid, no? How did you like ~~chatgpt's~~my fabulous ESP acrostic?
 
@@ -33,13 +33,13 @@ ESP stands for Extra Sensory Perception. In the context of fps games, it's just 
 
 ## Credits
 
-Before diving into how I wrote the esp, big shoutout to GuidedHacking's [OpenGL ESP Tutorial](https://guidedhacking.com/threads/how-to-make-an-opengl-esp-tutorial.14817/) and [DirectX ESP Tutorial](https://guidedhacking.com/threads/csgo-direct3d9-endscene-hook-d3d9-esp-tutorial-series.14570/). The OpenGL guide targets an older fps game called AssaultCube that uses with an OpenGL-based engine, while the DirectX guide is for CS:GO, which by default uses DirectX 9 for rendering.
+Before diving into how I wrote the ESP, big shoutout to GuidedHacking's [OpenGL ESP Tutorial](https://guidedhacking.com/threads/how-to-make-an-opengl-esp-tutorial.14817/) and [DirectX ESP Tutorial](https://guidedhacking.com/threads/csgo-direct3d9-endscene-hook-d3d9-esp-tutorial-series.14570/). The OpenGL guide targets an older fps game called AssaultCube that uses an OpenGL-based engine, while the DirectX guide is for CS:GO, which by default uses DirectX 9 for rendering.
 
 ---
 
 ## How to write an ESP
 
-The core idea is to **find a function in the rendering pipeline you can hook into**. Then, draw the we can draw the ESP and pass control back to the original function. I followed the same general flow in my ESP.
+The core idea is to **find a function in the rendering pipeline you can hook into**. Then, draw the ESP and pass control back to the original function. I followed the same general flow in my ESP.
 
 ---
 
@@ -48,7 +48,7 @@ The core idea is to **find a function in the rendering pipeline you can hook int
 - SwapBuffers: Swaps front/back buffers every frame; prevents flickering and tearing.
 - EndScene: Called once everything’s drawn for the next frame.
 
-I originally thought both were interchanaeable, but it turns out that SwapBuffers is for OpenGL and EndScene for DirectX. So just pick whichever your target game uses, no need to over think it.
+I originally thought both were interchangeable, but it turns out that SwapBuffers is for OpenGL and EndScene for DirectX. So just pick whichever your target game uses, no need to overthink it.
 
 ---
 

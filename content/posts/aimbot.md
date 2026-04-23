@@ -35,7 +35,7 @@ void RunAimbot()
 }
 ```
 
-## Trigonemtry (briefly)
+## Trigonometry (briefly)
 
 Just in case you are curious--nothing fancy, just high school trig.
 
@@ -47,7 +47,7 @@ float pitch = -asin(deltaVec.z / deltaVecLength) * (180 / PI);
 float yaw = atan2(deltaVec.y, deltaVec.x) * (180 / PI);
 ```
 
-I used `asin` for pitch and `atan2` for yaw based on the traingles formed between me and the enemy. Initially, my pitch was off (it was pointing the wrong way), so I reverted it after trial and error.
+I used `asin` for pitch and `atan2` for yaw based on the triangles formed between me and the enemy. Initially, my pitch was off (it was pointing the wrong way), so I reverted it after trial and error.
 
 After calculating the view angles, I smoothed them before applying to avoid snapping.
 
