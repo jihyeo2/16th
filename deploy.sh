@@ -10,5 +10,5 @@ hugo &&
 cd public &&
 git add . &&
 git commit -m "Updated site" &&
-git push origin gh-pages &&
+git push origin HEAD:gh-pages &&
 cd ..
