@@ -5,6 +5,7 @@ title = "Finding the missing manager"
 description = 'Mhm my new manager at GlowObject Inc.'
 tags = ["re_csgo"]
 categories = ["technical"]
+ShowToc = true
 [cover]
 image = "images/glowobject.png"
 hiddenInList = true

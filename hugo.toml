@@ -86,7 +86,7 @@ ShowCodeCopyButtons = true
 ShowRssButtonInSectionTermList = true
 ShowAllPagesInArchive = true
 ShowPageNums = true
-ShowToc = true
+ShowToc = false
 images = ["images/blob.png"]
 
   [params.profileMode]
