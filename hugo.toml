@@ -93,7 +93,7 @@ comments = true
   [params.giscus]
   repo = "jihyeo2/16th"
   repoId = "R_kgDOOc25lQ"
-  category = "Comments"
+  category = "Announcements"
   categoryId = "DIC_kwDOOc25lc4DAzNb"
   mapping = "pathname"
   reactionsEnabled = "1"
