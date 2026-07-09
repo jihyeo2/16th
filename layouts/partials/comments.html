@@ -2,38 +2,45 @@
 <div class="comments-section">
   <div class="comments-heading">Comments</div>
   {{- if (and .repo .repoId .categoryId) }}
-  <script src="https://giscus.app/client.js"
-    data-repo="{{ .repo }}"
-    data-repo-id="{{ .repoId }}"
-    data-category="{{ .category | default "Comments" }}"
-    data-category-id="{{ .categoryId }}"
-    data-mapping="{{ .mapping | default "pathname" }}"
-    data-strict="0"
-    data-reactions-enabled="{{ .reactionsEnabled | default "1" }}"
-    data-emit-metadata="0"
-    data-input-position="{{ .inputPosition | default "bottom" }}"
-    data-theme="{{ .lightTheme | default "noborder_light" }}"
-    data-lang="{{ .lang | default "en" }}"
-    crossorigin="anonymous"
-    async>
-  </script>
+  <div id="giscus-container"></div>
   <script>
     (function () {
+      var lightTheme = {{ .lightTheme | default "noborder_light" }};
+      var darkTheme = {{ .darkTheme | default "noborder_dark" }};
+
       function giscusTheme() {
-        return document.body.classList.contains('dark') ? '{{ .darkTheme | default "noborder_dark" }}' : '{{ .lightTheme | default "noborder_light" }}';
+        return document.body.classList.contains('dark') ? darkTheme : lightTheme;
       }
       function sendGiscusTheme() {
         var frame = document.querySelector('iframe.giscus-frame');
         if (!frame) return;
         frame.contentWindow.postMessage({ giscus: { setConfig: { theme: giscusTheme() } } }, 'https://giscus.app');
       }
+
+      var s = document.createElement('script');
+      s.src = 'https://giscus.app/client.js';
+      s.setAttribute('data-repo', {{ .repo }});
+      s.setAttribute('data-repo-id', {{ .repoId }});
+      s.setAttribute('data-category', {{ .category | default "Comments" }});
+      s.setAttribute('data-category-id', {{ .categoryId }});
+      s.setAttribute('data-mapping', {{ .mapping | default "pathname" }});
+      s.setAttribute('data-strict', '0');
+      s.setAttribute('data-reactions-enabled', {{ .reactionsEnabled | default "1" }});
+      s.setAttribute('data-emit-metadata', '0');
+      s.setAttribute('data-input-position', {{ .inputPosition | default "bottom" }});
+      s.setAttribute('data-theme', giscusTheme());
+      s.setAttribute('data-lang', {{ .lang | default "en" }});
+      s.setAttribute('crossorigin', 'anonymous');
+      s.async = true;
+      document.getElementById('giscus-container').appendChild(s);
+
       var toggle = document.getElementById('theme-toggle');
       if (toggle) {
         toggle.addEventListener('click', function () { setTimeout(sendGiscusTheme, 60); });
       }
       window.addEventListener('message', function (event) {
         if (event.origin !== 'https://giscus.app') return;
-        if (event.data && event.data.giscus && event.data.giscus.discussion) {
+        if (event.data && event.data.giscus) {
           sendGiscusTheme();
         }
       });
