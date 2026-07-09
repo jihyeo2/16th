@@ -2,22 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jihyeo2.github.io/16th/posts/certs/</loc>
-    <lastmod>2025-09-29T12:18:00-04:00</lastmod>
-  </url><url>
     <loc>https://jihyeo2.github.io/16th/categories/</loc>
-    <lastmod>2025-09-29T12:18:00-04:00</lastmod>
+    <lastmod>2026-06-06T17:40:00-04:00</lastmod>
   </url><url>
     <loc>https://jihyeo2.github.io/16th/categories/general/</loc>
-    <lastmod>2025-09-29T12:18:00-04:00</lastmod>
+    <lastmod>2026-06-06T17:40:00-04:00</lastmod>
   </url><url>
     <loc>https://jihyeo2.github.io/16th/tags/life/</loc>
-    <lastmod>2025-09-29T12:18:00-04:00</lastmod>
+    <lastmod>2026-06-06T17:40:00-04:00</lastmod>
   </url><url>
     <loc>https://jihyeo2.github.io/16th/posts/</loc>
-    <lastmod>2025-09-29T12:18:00-04:00</lastmod>
+    <lastmod>2026-06-06T17:40:00-04:00</lastmod>
+  </url><url>
+    <loc>https://jihyeo2.github.io/16th/posts/hackathon/</loc>
+    <lastmod>2026-06-06T17:40:00-04:00</lastmod>
   </url><url>
     <loc>https://jihyeo2.github.io/16th/tags/</loc>
+    <lastmod>2026-06-06T17:40:00-04:00</lastmod>
+  </url><url>
+    <loc>https://jihyeo2.github.io/16th/posts/alive/</loc>
+    <lastmod>2026-05-22T10:29:00-04:00</lastmod>
+  </url><url>
+    <loc>https://jihyeo2.github.io/16th/posts/certs/</loc>
     <lastmod>2025-09-29T12:18:00-04:00</lastmod>
   </url><url>
     <loc>https://jihyeo2.github.io/16th/tags/re_csgo/</loc>
@@ -37,6 +43,9 @@
   </url><url>
     <loc>https://jihyeo2.github.io/16th/posts/jerrysfartstinks/</loc>
     <lastmod>2025-07-25T19:47:00-04:00</lastmod>
+  </url><url>
+    <loc>https://jihyeo2.github.io/16th/posts/brushup/</loc>
+    <lastmod>2025-07-08T19:07:00-04:00</lastmod>
   </url><url>
     <loc>https://jihyeo2.github.io/16th/posts/rubicon/</loc>
     <lastmod>2025-07-06T23:11:00-04:00</lastmod>
