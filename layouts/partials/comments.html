@@ -1,3 +1,46 @@
-{{- /* Comments area start */ -}}
-{{- /* to add comments read => https://gohugo.io/content-management/comments/ */ -}}
-{{- /* Comments area end */ -}}
+{{- with site.Params.giscus }}
+<div class="comments-section">
+  <div class="comments-heading">Comments</div>
+  {{- if (and .repo .repoId .categoryId) }}
+  <script src="https://giscus.app/client.js"
+    data-repo="{{ .repo }}"
+    data-repo-id="{{ .repoId }}"
+    data-category="{{ .category | default "Comments" }}"
+    data-category-id="{{ .categoryId }}"
+    data-mapping="{{ .mapping | default "pathname" }}"
+    data-strict="0"
+    data-reactions-enabled="{{ .reactionsEnabled | default "1" }}"
+    data-emit-metadata="0"
+    data-input-position="{{ .inputPosition | default "bottom" }}"
+    data-theme="{{ .lightTheme | default "noborder_light" }}"
+    data-lang="{{ .lang | default "en" }}"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      function giscusTheme() {
+        return document.body.classList.contains('dark') ? '{{ .darkTheme | default "noborder_dark" }}' : '{{ .lightTheme | default "noborder_light" }}';
+      }
+      function sendGiscusTheme() {
+        var frame = document.querySelector('iframe.giscus-frame');
+        if (!frame) return;
+        frame.contentWindow.postMessage({ giscus: { setConfig: { theme: giscusTheme() } } }, 'https://giscus.app');
+      }
+      var toggle = document.getElementById('theme-toggle');
+      if (toggle) {
+        toggle.addEventListener('click', function () { setTimeout(sendGiscusTheme, 60); });
+      }
+      window.addEventListener('message', function (event) {
+        if (event.origin !== 'https://giscus.app') return;
+        if (event.data && event.data.giscus && event.data.giscus.discussion) {
+          sendGiscusTheme();
+        }
+      });
+    })();
+  </script>
+  {{- else }}
+  <p class="comments-placeholder">Comments aren't wired up yet — set repo / repoId / categoryId under [params.giscus] in hugo.toml once GitHub Discussions is enabled on the repo (see giscus.app).</p>
+  {{- end }}
+</div>
+{{- end }}

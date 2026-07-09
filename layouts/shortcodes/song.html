@@ -1,0 +1,41 @@
+{{- $spotify := .Get "spotify" -}}
+{{- $youtube := .Get "youtube" -}}
+{{- $label := .Get "label" | default "Now Playing" -}}
+
+{{- if $spotify -}}
+{{- $kind := "track" -}}
+{{- $id := $spotify -}}
+{{- if in $spotify "spotify.com" -}}
+{{- $kind = $spotify | replaceRE `^.*open\.spotify\.com/(?:[a-z-]+/)?(track|album|playlist)/.*$` `$1` -}}
+{{- $id = $spotify | replaceRE `^.*open\.spotify\.com/(?:[a-z-]+/)?(?:track|album|playlist)/([A-Za-z0-9]+).*$` `$1` -}}
+{{- end -}}
+<div class="song-embed">
+  <div class="song-embed-label">
+    <span>{{ $label }}</span>
+    <span class="song-embed-source">Spotify</span>
+  </div>
+  <iframe src="https://open.spotify.com/embed/{{ $kind }}/{{ $id }}?utm_source=generator&theme=0"
+    width="100%" height="152" frameborder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy" title="{{ $label }} — Spotify player"></iframe>
+</div>
+{{- else if $youtube -}}
+{{- $id := $youtube -}}
+{{- if in $youtube "youtu" -}}
+{{- if in $youtube "watch?v=" -}}
+{{- $id = $youtube | replaceRE `^.*[?&]v=([A-Za-z0-9_-]+).*$` `$1` -}}
+{{- else -}}
+{{- $id = $youtube | replaceRE `^.*/([A-Za-z0-9_-]{6,})/?(?:\?.*)?$` `$1` -}}
+{{- end -}}
+{{- end -}}
+<div class="song-embed">
+  <div class="song-embed-label">
+    <span>{{ $label }}</span>
+    <span class="song-embed-source">YouTube</span>
+  </div>
+  <iframe src="https://www.youtube-nocookie.com/embed/{{ $id }}"
+    width="100%" height="200" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen loading="lazy" title="{{ $label }} — YouTube player"></iframe>
+</div>
+{{- end -}}

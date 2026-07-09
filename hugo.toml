@@ -88,6 +88,19 @@ ShowAllPagesInArchive = true
 ShowPageNums = true
 ShowToc = false
 images = ["images/blob.png"]
+comments = true
+
+  [params.giscus]
+  repo = "jihyeo2/16th"
+  repoId = "R_kgDOOc25lQ"
+  category = "Comments"
+  categoryId = "DIC_kwDOOc25lc4DAzNb"
+  mapping = "pathname"
+  reactionsEnabled = "1"
+  inputPosition = "bottom"
+  lightTheme = "noborder_light"
+  darkTheme = "noborder_dark"
+  lang = "en"
 
   [params.profileMode]
   enabled = false

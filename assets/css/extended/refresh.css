@@ -1,0 +1,133 @@
+/* Refined-minimal pass: serif titles, mono meta/nav, hairline list rows, one accent color. */
+
+.post-title,
+.entry-header h2,
+.page-header h1 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    font-weight: 600;
+    letter-spacing: 0.005em;
+}
+
+.post-meta,
+.breadcrumbs,
+.paginav .title {
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+}
+
+#menu .active {
+    color: var(--primary);
+    border-bottom-color: var(--accent);
+}
+
+/* hairline list rows instead of boxed cards */
+.post-entry {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    padding: var(--gap) 0;
+    margin-bottom: 0;
+    transition: none;
+}
+
+.post-entry:active {
+    transform: none;
+}
+
+.post-entry:last-of-type {
+    border-bottom: none;
+}
+
+.post-tags a {
+    background: transparent;
+    border: 1px solid var(--border);
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+    font-size: 11px;
+    letter-spacing: 0.03em;
+}
+
+.post-tags a:hover {
+    background: var(--code-bg);
+}
+
+.post-content a {
+    box-shadow: 0 1px 0 var(--accent);
+}
+
+.post-content blockquote {
+    border-inline-start-color: var(--accent);
+}
+
+/* comments */
+.comments-section {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+}
+
+.comments-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-bottom: 18px;
+}
+
+.comments-heading::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+}
+
+.comments-placeholder {
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+    font-size: 12.5px;
+    color: var(--secondary);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+}
+
+/* song player shortcode */
+.song-embed {
+    margin: 0 0 var(--content-gap);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--entry);
+}
+
+.song-embed-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 14px;
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
+}
+
+.song-embed-source {
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    color: var(--secondary);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 2px 6px;
+    text-transform: none;
+}
+
+.song-embed iframe {
+    display: block;
+    width: 100%;
+    border: 0;
+}

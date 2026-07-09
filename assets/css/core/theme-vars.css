@@ -6,27 +6,31 @@
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;
-    --theme: rgb(255, 255, 255);
+    --theme: rgb(247, 247, 244);
     --entry: rgb(255, 255, 255);
-    --primary: rgb(30, 30, 30);
-    --secondary: rgb(108, 108, 108);
-    --tertiary: rgb(214, 214, 214);
-    --content: rgb(31, 31, 31);
-    --code-block-bg: rgb(28, 29, 33);
-    --code-bg: rgb(245, 245, 245);
-    --border: rgb(238, 238, 238);
+    --primary: rgb(21, 22, 27);
+    --secondary: rgb(99, 102, 111);
+    --tertiary: rgb(233, 232, 226);
+    --content: rgb(32, 33, 38);
+    --code-block-bg: rgb(27, 28, 33);
+    --code-bg: rgb(241, 240, 235);
+    --border: rgb(227, 226, 220);
+    --accent: rgb(137, 207, 240);
+    --accent-ink: rgb(21, 22, 27);
 }
 
 .dark {
-    --theme: rgb(29, 30, 32);
-    --entry: rgb(46, 46, 51);
-    --primary: rgb(218, 218, 219);
-    --secondary: rgb(155, 156, 157);
-    --tertiary: rgb(65, 66, 68);
-    --content: rgb(196, 196, 197);
-    --code-block-bg: rgb(46, 46, 51);
-    --code-bg: rgb(55, 56, 62);
-    --border: rgb(51, 51, 51);
+    --theme: rgb(19, 20, 24);
+    --entry: rgb(26, 28, 33);
+    --primary: rgb(236, 238, 241);
+    --secondary: rgb(163, 166, 173);
+    --tertiary: rgb(42, 44, 50);
+    --content: rgb(215, 216, 219);
+    --code-block-bg: rgb(28, 30, 36);
+    --code-bg: rgb(33, 35, 42);
+    --border: rgb(42, 44, 50);
+    --accent: rgb(137, 207, 240);
+    --accent-ink: rgb(21, 22, 27);
 }
 
 .list {
